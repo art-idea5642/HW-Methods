@@ -16,7 +16,7 @@ public class Main {
         //task3
         int distance = 95;
         int deliveryDays = calculateDeliveryDays(distance);
-        if (deliveryDays>=0) {
+        if (deliveryDays >= 0) {
             System.out.println("Потребуется дней: " + deliveryDays);
         } else {
             System.out.println("Доставки нет");
@@ -45,14 +45,15 @@ public class Main {
             System.out.println("Устойство не поддерживается");
         }
     }
-    static int calculateDeliveryDays (int distance) { //task3
-        if(distance<=20) {
+
+    static int calculateDeliveryDays(int distance) { //task3
+        if (distance <= 20) {
             return 1;
-        } else if (distance<=60) {
+        } else if (distance <= 60) {
             return 2;
-        } else if (distance<=100) {
+        } else if (distance <= 100) {
             return 3;
-        }else {
+        } else {
             return -1;
         }
     }
